@@ -1,8 +1,10 @@
 
 
 
+let nomes = document.getElementById("nome");
+let prova = document.getElementById("nomeUtente");
 
-
-
-let nameUtentes = document.getElementById("nome");
-console.log("nameUtentes");
+document.querySelector("button").addEventListener("click", function(){
+    prova.innerHTML= nomes;
+    
+});
