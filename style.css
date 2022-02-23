@@ -8,3 +8,19 @@ input{
     border-radius: 10px;
     border-color: blueviolet;
 }
+
+.my-info-container{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+
+
+.my-biglietto-container{
+    border: 2px solid black;
+}
+.my-container-utent-name{
+    height: 150px;
+    background-color: grey;
+}
