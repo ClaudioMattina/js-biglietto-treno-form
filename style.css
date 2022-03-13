@@ -1,8 +1,6 @@
 
 
-.my-container{
-    background-color: burlywood;
-}
+
 
 input{
     border-radius: 10px;
@@ -10,17 +8,30 @@ input{
 }
 
 .my-info-container{
-    background-color: aqua;
+    background-image: url("https://siviaggia.it/wp-content/uploads/sites/2/2021/07/GTrain.jpeg");
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
+    width: 70%;
+    margin: auto;
+}
+h3{
+    color: white;
 }
 
+p{
+    color: white;
+    font-size: 20px;
+}
 
-
-
+#biglietto{
+    background-color: red;
+}
 .my-biglietto-container{
-    border: 2px solid black;
+    
+    height: 200px;
 }
 .my-container-utent-name{
     height: 150px;
-    background-color: grey;
+    color: white;
 }

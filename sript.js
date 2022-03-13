@@ -5,7 +5,7 @@ const inputNome = document.getElementById("nome");
 /* importo l'input dell'utente che dichiara i km da percorrere */
 let inputKm = document.getElementById("chilometri");
 
-
+let biglietto = document.getElementById("biglietto")
 /* inporto il contenitore dove ci stamperemo il nome utente */
 let nomeUtente = document.getElementById("nomeUtente");
 /* dove stamperemo l'offerta */
@@ -38,6 +38,8 @@ const scontoSomma = (somma * 20) / 100;
 
 document.querySelector("button").addEventListener("click", function(){
 
+    biglietto.classList.remove("d-none")
+
     nomeUtente.innerHTML=`<p> ${inputNome.value} </p>`;
 
     carrozza.innerHTML= randomNumber;
@@ -45,11 +47,11 @@ document.querySelector("button").addEventListener("click", function(){
 
     if(età.value == "maggiorenne"){
         offerta.innerHTML = "Offerta per persone maggiorenni"
-        costoBiglietto.innerHTML = somma;
+        costoBiglietto.innerHTML = somma + "€";
     }
     else{
         offerta.innerHTML = "Offerta per minorenni"
-        costoBiglietto.innerHTML = somma - scontoSomma;
+        costoBiglietto.innerHTML = somma - scontoSomma + "€";
     }
 
     
@@ -60,7 +62,7 @@ document.querySelector("button").addEventListener("click", function(){
 });
 
 
-let km = document.getElementById("chilometri");
+
 
 
 
